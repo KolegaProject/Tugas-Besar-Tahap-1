@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.logo {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.gym-section {
+    margin-bottom: 25px;
+}
+
+.gym-section p {
+    margin-bottom: 10px;
+}
+
+.gym-select {
+    flex: 1;
+    padding: 10px 12px;
+    background-color: #e5e7eb;
+    border: none;
+    border-radius: 6px;
+    color: #6b7280;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+}
+
+.btn-add {
+    width: 35px;
+    height: 35px;
+    margin-left: 8px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.btn-add:hover {
+    background-color: #f9fafb;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.menu-item {
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.menu-item:hover {
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.menu-item.active {
+    background-color: #1e293b;
+    color: white;
+}
+
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.notif {
+    width: 40px;
+    height: 40px;
+    background-color: #f3f4f6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.notif:hover {
+    background-color: #e5e7eb;
+}
+
+.bell-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user span {
+    font-weight: 500;
+}
+
+.content {
+    background-color: white;
+    padding: 80px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.btn-tambah {
+    padding: 12px 30px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-tambah:hover {
+    background-color: #2c3e50;
+    color: white;
+    border-color: #2c3e50;
+}

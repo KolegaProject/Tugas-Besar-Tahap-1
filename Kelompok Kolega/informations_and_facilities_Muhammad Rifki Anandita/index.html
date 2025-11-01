@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informasi & Fasilitas - Dashboard Gym</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Sidebar ===== -->
+  <aside class="sidebar">
+    <div>
+      <div class="logo">Logo</div>
+
+      <div class="gym-select">
+        <label for="gymList">Gym</label>
+        <div class="gym-dropdown">
+          <select id="gymList">
+            <option>Urban Gym</option>
+          </select>
+          <button id="addGymBtn">+</button>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="../dashboard_arzu/index.html" class="nav-link">Dashboard</a>
+        <a href="../informations_and_facilities_rifki/index.html" class="nav-link active">Informasi & Fasilitas</a>
+        <a href="#" class="nav-link">Manajemen Keuangan</a>
+        <a href="../staff_aryo/index.html" class="nav-link">Staff</a>
+        <a href="../member_gym_bintang/index.html" class="nav-link">Anggota Gym</a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main">
+    <header class="header">
+      <h2>Informasi & Fasilitas</h2>
+      <div class="profile">
+         <button class="bell-btn">
+      <i class="bell-icon">🔔</i>
+    </button>
+        <img src="https://i.scdn.co/image/ab67616d00001e02d45ec66aa3cf3864205fd068" alt="Profile" />
+        <span>John Doe</span>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="card">
+        <h3>Uget Uget Gym</h3>
+        <p><strong>Lokasi:</strong> Jl. Telekomunikasi Terusan Buahbatu No.1, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257</p>
+        <p><strong>Jam Operasional:</strong> Senin - Jumat: 06:00 - 22:00, Sabtu - Minggu: 08:00 - 18:00</p>
+        <p><strong>Deskripsi:</strong> Uget Uget Gym menawarkan peralatan canggih, berbagai kelas kebugaran, dan pelatih ahli untuk membantu Anda mencapai tujuan kebugaran Anda. Dengan pilihan keanggotaan fleksibel dan suasana yang memotivasi, ini adalah tempat sempurna untuk memulai perjalanan kebugaran Anda.</p>
+        
+        <div class="tags">
+          <span class="tag">Pilates</span>
+          <span class="tag">Kardio</span>
+          <span class="tag">Sauna</span>
+        </div>
+
+        <h4 class="section-title">Paket Berlangganan</h4>
+        <div class="paket">
+          <div class="paket-card">
+            <h5>Paket Basic</h5>
+            <p class="price">Rp 250.000 <span>/bulan</span></p>
+            <ul>
+              <li>Akses Gym Dasar</li>
+              <li>2x Kelas Grup per Minggu</li>
+              <li>Locker Pribadi</li>
+            </ul>
+          </div>
+          <div class="paket-add">+</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Fasilitas</h3>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Cari alat..." />
+          <button id="addToolBtn">Tambah</button>
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nama Alat</th>
+              <th class="aksi">Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="equipmentTable">
+            <tr>
+              <td>Treadmill</td>
+              <td>
+                <button class="edit">Edit</button>
+                <button class="delete">Hapus</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Treadmill</td>
+              <td>
+                <button class="edit">Edit</button>
+                <button class="delete">Hapus</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
