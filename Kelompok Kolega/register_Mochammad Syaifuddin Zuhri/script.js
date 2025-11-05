@@ -5,9 +5,9 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
 });
 
 document.getElementById("googleBtn").addEventListener("click", function () {
-    window.location.href = "../login_Muhammad Zhafran Ilham/index.html";
-  });
+  window.location.href = "../login_Muhammad Zhafran Ilham/index.html";
+});
 
-  document.getElementById("facebookBtn").addEventListener("click", function () {
-    window.location.href = "../login_Muhammad Zhafran Ilham/index.html";
-  });
+document.getElementById("facebookBtn").addEventListener("click", function () {
+  window.location.href = "../login_Muhammad Zhafran Ilham/index.html";
+});
